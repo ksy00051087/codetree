@@ -1,0 +1,6 @@
+# a = float(input())
+# b = float(a * 30.48) 
+# print(f'{b:.1f}')
+a = float(input())
+b = (a + 1.5)
+print(f'{b:.2f}')
