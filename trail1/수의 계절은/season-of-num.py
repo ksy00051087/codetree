@@ -1,11 +1,12 @@
-M = int(input())
-1 <= M <= 12
+# 변수 선언, 입력
+m = int(input())
 
-if 3 <= M <= 5:
+# 출력
+if m >= 12 or m <= 2:
+    print("Winter")
+elif m <= 5:
     print("Spring")
-elif 6 <= M <= 8:
+elif m <= 8:
     print("Summer")
-elif 9 <= M <= 11:
-    print("Fall")
 else:
-    print("Winter") 
+    print("Fall")
