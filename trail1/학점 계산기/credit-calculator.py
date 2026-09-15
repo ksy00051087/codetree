@@ -1,6 +1,6 @@
 N = int(input())
 arr = list(map(float, input().split()))
-sum_val = sum(arr[0:])
+sum_val = sum(arr)
 
 avr = sum_val / N
 print(f'{avr:.1f}')
