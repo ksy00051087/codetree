@@ -1,7 +1,6 @@
-n, q = map(int, input().split())
+N, Q = map(int, input().split())
 arr = list(map(int, input().split()))
-
-for _ in range(q):
+for _ in range(Q):
     cmd = list(map(int, input().split()))
     if cmd[0] == 1:
         print(arr[cmd[1]-1])
