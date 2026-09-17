@@ -6,9 +6,10 @@ for _ in range(q):
     if cmd[0] == 1:
         print(arr[cmd[1]-1])
     elif cmd[0] == 2:
-        try:
+        if cmd[1] in arr:
             print(arr.index(cmd[1]) + 1)
-        except ValueError:
+        else:
             print(0)
     else:
         print(*arr[cmd[1]-1:cmd[2]])
+
