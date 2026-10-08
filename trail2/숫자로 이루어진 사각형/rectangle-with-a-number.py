@@ -1,11 +1,16 @@
 n = int(input())
 
-nums = [1,2,3,4,5,6,7,8,9] * 1111 + [1]
-
-for i, val in enumerate(nums):
-    print(val, end=" ")
-    if (i+1) % n == 0:
+def square(num):
+    cnt = 1
+    for i in range(num):
+        for j in range(num):
+            print(cnt, end=' ')
+            if cnt <= 8:
+                cnt += 1
+            else:
+                cnt = 1
         print()
-    if (i+1) == n*n:
-        break
-    
+    return cnt
+
+square(n)
+
