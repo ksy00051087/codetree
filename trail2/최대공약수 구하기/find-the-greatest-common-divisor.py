@@ -1,15 +1,17 @@
-n, m = tuple(map(int, input().split()))
+N, M = map(int, input().split())
+
+def kkr(N, M):
+    num = 0
+    for i in range(1, min(N, M) + 1):
+        if N % i == 0 and M % i == 0:
+            num = i
+    print(num)
+
+kkr(N, M)
 
 
 
-def find_gcd(n, m):
-    gcd = 0
-    for i in range(1, min(n, m) + 1):
-        if n % i == 0 and m % i == 0:
-            gcd = i
-
-    print(gcd)
 
 
-find_gcd(n, m)
+
 
