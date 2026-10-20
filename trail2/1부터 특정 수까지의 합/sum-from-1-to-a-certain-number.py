@@ -1,11 +1,9 @@
-n = int(input())
-
-def krr(n):
-    sum_val = 0  
+def sum_val(n):
+    sum_val1 = 0
     for i in range(1, n + 1):
-        sum_val += i
-    ans = sum_val // 10
-    print(ans)
+        sum_val1 += i
+    print(sum_val1 // 10)
 
-krr(n)
-
+n = int(input())
+sum_val(n)
+    
