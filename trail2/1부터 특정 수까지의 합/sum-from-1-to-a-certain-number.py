@@ -1,9 +1,8 @@
-def sum_val(n):
-    sum_val1 = 0
-    for i in range(1, n + 1):
-        sum_val1 += i
-    print(sum_val1 // 10)
+def ans(N):
+    sum_val = 0
+    for i in range(1, N + 1):
+        sum_val += i
+    print(sum_val // 10)
 
-n = int(input())
-sum_val(n)
-    
+N = int(input())
+ans(N)
